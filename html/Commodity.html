@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/Commodity.css"/>
+	</head>
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+	<body>
+<!-- <--------------------------导航--------------------------------> 
+	<div class="Nav">
+		<div class="nav">
+			<div class="nav-logo">
+				<a href="../index.html"></a>
+			</div>
+			<div class="nav-text">
+				<p></p>
+				<a >礼物分类</a>
+				<i></i>
+				<div class="nav-ejcd">
+					<a href="details.html" style="margin-top: -40px;">少女心饰</a>
+					<a href="details1.html">萌萌美物</a>
+					<a href="category.php?id=387">为爱停留</a>
+					<a href="category.php?id=388">潮流时尚</a>
+					<a href="category.php?id=389">科技达人</a>
+					<a href="category.php?id=390">幸福烙印</a>
+					<a href="category.php?id=391">爱情保鲜</a>
+					<a class="last" style="margin-top: -290px;"></a>
+					<a class="last" style="margin-top: -245px;"></a>
+					<a class="last" style="margin-top: -200px;"></a>
+					<a class="last" style="margin-top: -155px;"></a>
+					<a class="last" style="margin-top: -110px;"></a>
+					<a class="last" style="margin-top: -70px;"></a>
+					<a class="last" style="margin-top: -25px;"></a>
+				</div>
+			</div>
+			<ul class="nav-text1">
+				<li class="sldh s"><a>送礼导航</a>
+					<div class="nav-ejcd2">
+						<ul class="nav-ejcd2-text1">
+							<a>送给谁：</a>
+							<a style="margin-left: 15px;">不限</a>
+							<a>公主女票</a>
+							<a>欧巴男票</a>
+							<a>潮爸辣妈</a>
+							<a>兄弟闺蜜</a>
+							<a>熊孩子</a>
+							<a>生意伙伴</a>
+							<a>致谢恩师</a>
+						</ul>
+						<ul class="nav-ejcd2-text2">
+							<a>为啥送：</a>
+							<a style="margin-left: 15px;">不限</a>
+							<a>表白撩妹</a>
+							<a>过生日</a>
+							<a>圣诞节</a>
+							<a>情人节</a>
+							<a>去求婚</a>
+							<a>纪恋日</a>
+							<a>想送任性</a>
+						</ul>
+						<p class="sousuo">搜索</p>
+					</div>
+				</li>
+				<li class="sldh"><a>创意礼物</a></li>
+				<li class="sldh"><a>新品上架</a></li>
+				<li class="sldh"><a>中秋节礼品</a></li>
+			</ul>
+			<div class="nav-input">
+				<input type="text" name="search" required id="head-search">
+				<a href=""></a>
+			</div>
+			<div class="nav-denglu">
+				<a class="dl">
+					<i></i>
+					<span>︿</span>
+					<b></b>
+				</a>
+				<div class="nav-ejcd3">
+					<div class="nav-ejcd3-text1">
+							<a href=""><a href="login.html">登录</a>/<a href="register.html">注册</a></a>
+					</div>
+					<a style="margin-left: 50px;">浏览历史</a>
+					<a style="margin-left: 50px;">我的订单</a>
+					<a style="margin-left: 50px;">我的收藏</a>
+				</div>
+			</div>
+			<div class="Gwc">
+				<a href="Shopping Trolley.html" class="gwc">
+					<i></i>
+					<span class="cart-count">2</span>
+				</a>
+				<div class="nav-ejcd4">
+					<h4>︿</h4>
+					<i></i>
+					<div class="nav-ejcd4-1">
+						<a href="" class="bt">
+							<img src="../img/gwc1.jpg" />
+						</a>
+						<div class="nav-ejcd4-1-text"> 
+							<a href="">优雅天鹅</a><br />
+							<p class="lw">礼物款式:优雅天鹅</p>
+						</div>
+						<div class="nav-ejcd4-2">
+							X1
+							<br>
+							￥169.0
+							<br>
+							<a href="">删除</a>
+						</div>
+					</div>
+					<div class="nav-ejcd4-1">
+						<a href="" class="bt">
+							<img src="../img/gwc2.jpg" />
+						</a>
+						<div class="nav-ejcd4-1-text"> 
+							<a href="">蝶恋花</a><br />
+							<p class="lw">个性定制:直接购买</p>
+						</div>
+						<div class="nav-ejcd4-2">
+							X1
+							<br>
+							￥148.0
+							<br>
+							<a href="">删除</a>
+						</div>
+					</div>
+					<div class="js">
+						<p class="js-f1">
+							共计2件商品<br>
+							<b>合计：<span class="js-f2">￥317.0</span></b>
+						</p>
+						<a href="" class="">去购物车结算</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- <-------------------------------QQ交谈------------------------------->
+	<div class="Item">
+		<div class="gwc-banner-text1">
+			<div class="gwc-banner-text1-left">
+				<a href="../index.html">首页</a>
+				<span>/</span>
+				<a href="">不一Yang的惊喜</a>
+			</div>
+			<div class="login-text">
+				<a href="http://crm2.qq.com/page/portalpage/wpa.php?uin=400611215
+6&amp;cref=http://www.liwuyou.com/&amp;ref=&amp;f=1&amp;ty=1&amp;ap=&amp;as=" class="login-text1" >QQ在线交谈
+				</a>
+				<span class="login-text2">服务热线：0755-86380505、0755-86380506 (8:00－24:00)
+				</span>
+			</div>
+		</div>
+	</div>
+<!--<---------------------------活动页----------------------------->
+	<div class="active">
+		<div class="active1">
+			<div class="active1-1">
+				<div class="active1-1-left">
+					<div class="img-box">
+						<img src="../img/xq1.jpg"  date-src="../img/xq7.jpg" style="margin-top: 0;" class="sml" />	
+					</div>
+					<div class="img-box">
+						<img src="../img/xq2.jpg" date-src="../img/fdj2.jpg" class="sml" />
+					</div>
+					<div class="img-box">
+						<img src="../img/xq3.jpg" date-src="../img/fdj3.jpg" class="sml"/>
+					</div>
+					<div class="img-box">
+						<img src="../img/xq4.jpg" date-src="../img/fdj4.jpg" class="sml"/>
+					</div>
+					<div class="img-box">
+						<img src="../img/xq5.jpg" date-src="../img/fdj5.jpg" class="sml"/>
+					</div>
+					<div class="img-box">
+						<img src="../img/xq6.jpg" date-src="../img/fdj6.jpg" class="sml"/>
+					</div>
+				</div>
+				<div class="active1-1-center">
+						<div class="men"></div>
+						<span class="gray"></span>
+						<img class="pic" src="../img/xq7.jpg" class="big" />
+				</div>
+				<div class="rig">
+						<img src="../img/xq7.jpg" class="rigImg">
+				</div>
+				<div class="active1-1-right">
+					<h2 class="active1-1-right-title">不一Yang的惊喜</h2>
+					<p class="active1-1-right-text">新的一年，我要给你不一“羊”的
+						惊喜！925纯银的精细打造，每一次锤炼都是我对你爱的见证，镶嵌起来的
+						小钻，一闪一闪的光亮，阐述着我对你感情的坚韧，悄悄刻上你我的名字，
+						只想送你一个惊喜，我们会一直在一起，面对人生的风浪一路搀扶着走下去！  
+					</p>
+					<div class="active1-1-right-jq">
+						<span class="active1-1-right-jq-left" >194.0 - 214.0元</span>
+						<span class="active1-1-right-jq-right">暂时缺货</span>
+					</div>
+					<div class="dz">
+						<div class="dz1">
+							<span class="dz1-left">个性定制：</span>
+							<span class="dz1-right">
+								<a href="">直接购买</a>
+								<a href="">个性定制</a>
+							</span>
+						</div>
+						<div class="dz2">
+							<span class="dz1-left">个性定制：</span>
+							<span class="dz1-right1">
+								<a href="">小羊手链+小羊项链</a>
+							</span>
+						</div>
+					</div>
+					<div class="gm">
+						<a href="" class="single">直接购买</a>
+						<a href="" class="collect">
+							<i class="icon-bgr"></i>
+						</a>
+					</div>
+					<div class="btn-others">
+				        <a href="">
+				        	<i class="icon-bgr"></i>
+				        	查看更多同类商品
+				        </a>
+				    </div>
+				</div>
+			</div>
+			<div class="detail">
+			    <div class="detail1">                                        
+				    <a href="" style="color: #d93732;">礼物详情</a>
+				    <a href="">规格参数</a>
+				    <a href="" >评价晒单
+				    	 (<span class="comment_total">0</span>) 
+				    </a>
+				    <a href="" class="f-666">咨询
+				    	 (<span class="question-total">3</span>)
+				    </a>
+			    </div>
+			    <div class="login-text">
+					<a href="http://crm2.qq.com/page/portalpage/wpa.php?uin=400611215
+	6&amp;cref=http://www.liwuyou.com/&amp;ref=&amp;f=1&amp;ty=1&amp;ap=&amp;as=" class="login-text1" >QQ在线交谈
+					</a>
+					<span class="login-text2 xs" style="float: right;">需要帮助？
+					</span>
+				</div>
+			</div>
+		</div>
+<!--<------------------------------active2--------------------->
+		<div class="active2">
+			<div class="active2-1">本产品当天下午5点前的订单当天发货。</div>
+			<img src="../img/小羊手链项链新图_01.jpg" />
+			<img src="../img/小羊手链项链新图_02 (1).jpg" />
+			<img src="../img/小羊手链项链新图_04 (1).jpg" />
+			<img src="../img/小羊手链项链新图_05.jpg" />
+			<img src="../img/小羊手链项链新图_06 (1).jpg"/>
+			<img src="../img/小羊手链项链新图_07.jpg" />
+			<img src="../img/手环换包装-pc_01(2411).jpg" />
+			<img src="../img/手环换包装-pc_02(3437).jpg" />
+			<img src="../img/手环换包装-pc_03(7764).jpg" />
+			<img src="../img/手环换包装-pc_04(9880).jpg" />
+			<img src="../img/手环换包装-pc_05(8436).jpg" />
+			<img src="../img/790详情(7893) (1).jpg" />
+			<img src="../img/无包装有贺卡 (1).jpg" />
+			<img src="../img/内页官网_03.jpg" />
+			<img src="../img/快递.jpg" />
+			<img src="../img/内页官网_05 (1).jpg" />
+		</div>
+		<div class="active3" >规格参数</div>
+		<div class="active4">
+			<ul class="property">
+				<li>名称：不一Yang的惊喜</li>
+				<li>内容：纯银手链一条、项链一条</li>
+				<li>材质：925纯银</li>
+				<li>手链规格：周长约18cm；尾链约3.5cm；吊坠约1.7g</li>
+				<li>项链规格：链长40cm；吊坠5*3*0.2cm（盒子链或者侧身链随机）</li>
+				<li>
+					<span style="color:#CC0000;">定制提示：手链项链皆可定制一个字符，当天下午5点前确定的订单当天发货</span>	
+				</li>
+				<li>包装：精美包装</li>
+			</ul>
+		</div>
+		<div class="active3">评价晒单</div>
+		<div class="commen">
+			<p class="commen1">
+				<a href=""  class="fb">所有评价
+					(<span class="comment_total">0</span>)
+				</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+				<a href="" class="fb1">有晒单的评价
+					(<span class="saidan_total">0</span>)
+				</a>
+			</p>
+			<p class="commen2">
+				暂时没有评价
+			</p>
+		</div>
+		<div class="active3">商品咨询</div>
+		<div class="commen4">
+			<div class="commen4-1">
+		    	<span class="commen4-2">
+		    		<input type="text" class="question">
+		    	</span>
+		        <a href="" class="question-search">发表咨询</a>
+    		</div>
+    		<ul class="ques-box">
+    			<li class="ques-box1">
+    				<p class="question clear">
+    					<span class="overtxt">Q: 是银的吗</span>
+    				</p>
+    				<p style="color: #996c33; margin-top: 25px;">A: 这款礼品925纯银材质的哦 ~</p>
+    			</li>
+    			<li class="ques-box1">
+	    			<p class="question clear">
+	    				<span class="overtxt">Q: 可以刻几个文字</span>
+	    			</p>
+	    			<p style="color: #996c33; margin-top: 25px;">A: 尾链部分可以定制一个字符的哦 </p>
+    			</li>
+    			<li class="ques-box1">
+    				<p class="question clear">
+    					<span class="overtxt">Q: 快递多久到</span>
+    				</p>
+    				<p class="overtxt1">
+    					A: 您好，我们是由深圳发货，有顺丰和普通快递两种选择。
+    				</p>
+    			</li>
+    		</ul>
+    		<div class="look-all">
+    			<a href="" class="f16">查看全部
+    				<span>3</span>
+    				个提问
+    				<i></i>
+    			</a>
+    		</div>
+		</div>
+		<div class="active3">猜你喜欢</div>
+		<ul class="like">
+			<li class="like1">
+				<a href="">
+					<img src="../img/xq8.jpg" />
+				</a>
+				<p>
+					<a href="">羊年吉祥</a>
+				</p>
+				<p>￥89.0</p>
+			</li>
+			<li class="like1">
+				<a href="">
+					<img src="../img/xq8.jpg" />
+				</a>
+				<p>
+					<a href="">不一Yang的惊喜</a>
+				</p>
+				<p>￥194.0</p>
+			</li>
+			<li class="like1">
+				<a href="">
+					<img src="../img/xq10.jpg" />
+				</a>
+				<p>
+					<a href="">眉黛青颦</a>
+				</p>
+				<p>￥218.0</p>
+			</li>
+			<li class="like1" style="background: #f5f5f5;"></li>
+			<li class="like1" style="background: #f5f5f5;"></li>
+		</ul>
+		<div class="options">
+			<i style="border-color: #d93732;"></i>
+			<i></i>
+			<i></i>
+		</div>
+	</div>
+<!--<-----------------------------footer----------------------------->
+	<div class="footer">
+			<div class="footer1">
+				<div class="footer1-1">
+					<i></i>
+				</div>
+				<div class="footer1-2">
+					<img src="../img/slogan.png">
+				</div>
+				<div class="footer1-3">
+					<p class="footer1-3-text">关注我们</p>
+					<p class="footer1-3-img">
+						<a href="" class="footer1-3-img1"></a>
+						<a href="" class="footer1-3-img2"></a>
+						<a href="" class="footer1-3-img3">
+							<i></i>
+						</a>
+					</p>
+				</div>
+				<div class="footer1-4">
+					<p class="footer1-4-text1">0755-86380505</p>
+					<p class="footer1-4-text2">周一至周日 8:00-24:00</p>
+					<a href="http://crm2.qq.com/page/portalpage/wpa.php?uin=4006112156&amp;cref=http://www.liwuyou.com/&amp;ref=&amp;f=1&amp;ty=1&amp;ap=&amp;as=" class="footer1-4-text3">QQ在线交谈</a>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<ul class="item1">
+				<li class="item1-1" style="margin-left:90px;">
+					<i class="item1-1-img1"></i>
+					<span>30天免费退换货</span>
+				</li>
+				<li class="item1-1">
+					<i class="item1-1-img2"></i>
+					<span>100%正品保证</span>
+				</li>
+				<li class="item1-1">
+					<i class="item1-1-img3"></i>
+					<span>全场免运费</span>
+				</li>
+				<li class="item1-1" style="margin-right:30px;">
+					<i class="item1-1-img4"></i>
+					<span>提供礼品级包装</span>
+				</li>
+			</ul>
+			<div class="item2">
+				<div class="item2-text1">
+					<p class="item2-text1-1">
+						<span class="item2-text1-left">© liwuyou.com</span>
+						<span>
+							<a href="http://www.miitbeian.gov.cn/">粤ICP备10222238号-1</a>
+						</span>
+					</p>
+				</div>
+				<p class="item2-text2">
+					<a href="article.php?id=5" class="item2-text2-1" style="margin-left:0; ">关于我们</a>
+					<span>|</span>
+					<a href="article.php?id=5" class="item2-text2-1">帮助中心</a>
+					<span>|</span>
+					<a href="article.php?id=5" class="item2-text2-1">人才招聘</a>
+					<span>|</span>
+					<a href="article.php?id=5" class="item2-text2-1">售后服务</a>
+					<span>|</span>
+					<a href="article.php?id=5" class="item2-text2-1">配送与验收</a>
+					<span>|</span>
+					<a href="article.php?id=5" class="item2-text2-1">联系我们</a>
+				</p>
+			</div>
+		</div>
+	</body>
+	<script src="../js/Commodity.js" type="text/javascript" charset="utf-8"></script>
+</html>

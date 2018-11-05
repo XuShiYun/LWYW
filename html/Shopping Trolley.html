@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" type="text/css" href="../css/Shopping Trolley.css"/>
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<!--<-------------------------导航------------------------------------->
+	<div class="Nav">
+		<div class="Nav-center">
+			<div class="nav-box">
+				<div class="nav-logo">
+					<a href="../index.html"></a>	
+				</div>
+				<span>我的购物车</span>
+			</div>
+			<div class="Nav-center1">
+        	     <span> <a href="login.html">登录</a> / <a href="register.html">注册</a></span>&nbsp;&nbsp;&nbsp;
+        	     <a href="">浏览历史</a>
+            </div>
+		</div>
+	</div>
+	<div class="gwc-banner">
+		<div class="gwc-banner-text1">
+			<div class="gwc-banner-text1-left">
+				<a href="../index.html">首页</a>
+				<span>/</span>
+				购物车
+			</div>
+			<div class="login-text">
+				<a href="http://crm2.qq.com/page/portalpage/wpa.php?uin=400611215
+6&amp;cref=http://www.liwuyou.com/&amp;ref=&amp;f=1&amp;ty=1&amp;ap=&amp;as=" class="login-text1" >QQ在线交谈
+				</a>
+				<span class="login-text2">服务热线：0755-86380505、0755-86380506 (8:00－24:00)
+				</span>
+			</div>
+		</div>
+		<div class="gwc-banner-text2">
+			<table>
+				<thead>
+				    <tr>
+					    <td class="sp">商品信息</td>
+					    <td>单价</td>
+					    <td>数量</td>
+					    <td>库存</td>
+					    <td>小计</td>
+					    <td>操作</td>
+				    </tr>
+    			</thead>
+    		</table>
+    		<div class="table2 p1">
+    			<div class="table2-left">
+    				<a href="">
+    					<img src="http://img3.liwuyou.com/images/201609/source_img/386_P_1473733903442.jpg!list115.jpg">
+    				</a>
+    				<div class="table2-left2">
+	    				<p class="f1">
+	    					<a href="">优雅天鹅</a>
+	    				</p>
+	    				<p class="f2">
+	    					<span class="f3">礼物款式:优雅天鹅</span>
+	    				</p>
+	    			</div>
+    			</div>
+    			<div class="table2-right">
+    				<p class="table2-right1">￥<span class="price">169</span>.0</p>
+    				<div class="table2-right2">
+    					<div class="table2-right2-1">
+    						<span class="table2-right2-2"></span>
+    						<input type="text" value="1" class="much">
+    						<span class="table2-right2-3"></span>
+    					</div>
+    				</div>
+    				<p class="table2-right1">有库存</p>
+    				<p class="table2-right1">￥<span class="prices">169</span>.0</p>
+    				<p class="table2-right3">
+    					<span class="del s1"></span>
+    				</p>
+    			</div>
+    		</div>
+    		<div class="table2 s4">
+    			<div class="table2-left">
+    				<a href="">
+    					<img src="http://img5.liwuyou.com/images/201609/source_img/3754_P_1472718601439.jpg!list115.jpg" class="dib m-r-5">
+    				</a>
+    				<div class="table2-left2">
+	    				<p class="f1">
+	    					<a href="">蝶恋花</a>
+	    				</p>
+	    				<p class="f2">
+	    					<span class="f3">个性定制:直接购买</span>
+	    				</p>
+	    			</div>
+    			</div>
+    			<div class="table2-right k2">
+    				<p class="table2-right1">￥<span class="price price1">148</span>.0</p>
+    				<div class="table2-right2">
+    					<div class="table2-right2-1">
+    						<span class="table2-right2-2 btn1"></span>
+    						<input type="text" value="1" class="much much1">
+    						<span class="table2-right2-3 btn2"></span>
+    					</div>
+    				</div>
+    				<p class="table2-right1">有库存</p>
+    				<p class="table2-right1">￥<span class="prices prices1">148</span>.0</p>
+    				<p class="table2-right3">
+    					<span class="del s2"></span>
+    				</p>
+    			</div>
+    		</div>
+    		<div class="jxgw">
+			    <div class="jxgw-left">
+			    	<a href="../index.html" >
+			    		<i></i>
+			    		继续购物
+			    	</a>
+			    </div>
+			    <div class="jxgw-right">
+			    	<span>共2件商品</span>
+			    	<span class="jxgw-right1">合计：
+			    		<b id="goods-total">￥<span class="jisuan">317</span>.0</b>
+			    	</span>
+			    	<span class="jiezhang">
+			    		去结账
+			    	</span>
+			    </div>
+    		</div>
+		</div>
+		
+	</div>
+<!--<---------------------------footer------------------------------->
+		<div class="footer">
+			<div class="footer1">
+				<div class="footer1-1">
+					<i></i>
+				</div>
+				<div class="footer1-2">
+					<img src="../img/slogan.png">
+				</div>
+				<div class="footer1-3">
+					<p class="footer1-3-text">关注我们</p>
+					<p class="footer1-3-img">
+						<a href="" class="footer1-3-img1"></a>
+						<a href="" class="footer1-3-img2"></a>
+						<a href="" class="footer1-3-img3">
+							<i></i>
+						</a>
+					</p>
+				</div>
+				<div class="footer1-4">
+					<p class="footer1-4-text1">0755-86380505</p>
+					<p class="footer1-4-text2">周一至周日 8:00-24:00</p>
+					<a href="http://crm2.qq.com/page/portalpage/wpa.php?uin=4006112156&amp;cref=http://www.liwuyou.com/&amp;ref=&amp;f=1&amp;ty=1&amp;ap=&amp;as=" class="footer1-4-text3">QQ在线交谈</a>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<ul class="item1">
+				<li class="item1-1" style="margin-left:90px;">
+					<i class="item1-1-img1"></i>
+					<span>30天免费退换货</span>
+				</li>
+				<li class="item1-1">
+					<i class="item1-1-img2"></i>
+					<span>100%正品保证</span>
+				</li>
+				<li class="item1-1">
+					<i class="item1-1-img3"></i>
+					<span>全场免运费</span>
+				</li>
+				<li class="item1-1" style="margin-right:30px;">
+					<i class="item1-1-img4"></i>
+					<span>提供礼品级包装</span>
+				</li>
+			</ul>
+			<div class="item2">
+				<div class="item2-text1">
+					<p class="item2-text1-1">
+						<span class="item2-text1-left">© liwuyou.com</span>
+						<span>
+							<a href="http://www.miitbeian.gov.cn/">粤ICP备10222238号-1</a>
+						</span>
+					</p>
+				</div>
+				<p class="item2-text2">
+					<a href="article.php?id=5" class="item2-text2-1" style="margin-left:0; ">关于我们</a>
+					<span>|</span>
+					<a href="article.php?id=5" class="item2-text2-1">帮助中心</a>
+					<span>|</span>
+					<a href="article.php?id=5" class="item2-text2-1">人才招聘</a>
+					<span>|</span>
+					<a href="article.php?id=5" class="item2-text2-1">售后服务</a>
+					<span>|</span>
+					<a href="article.php?id=5" class="item2-text2-1">配送与验收</a>
+					<span>|</span>
+					<a href="article.php?id=5" class="item2-text2-1">联系我们</a>
+				</p>
+			</div>
+		</div>
+		<div class="banquan">
+			<div class="banquan1">
+				<div class="banquan1-text1">
+					<a>友情链接：</a>
+					<a href="http://www.yofus.com/" target="_blank">照片书</a>
+					<a href="http://www.163yu.com/" target="_blank">新疆和田玉</a>
+					<a href="http://www.nzjsw.com/" target="_blank">健身减肥 </a>
+					<a href="http://www.iyingji.com" target="_blank">网上冲印</a>
+					<a href="http://www.crd.cn" target="_blank">钻戒定制</a>
+					<a href="http://www.51pot.com/" target="_blank">紫砂壶</a>
+					<a href="http://www.doido.com/" target="_blank">钻石</a>
+					<a href="http://www.yipihuo.com" target="_blank">批发网</a>
+					<a href="http://www.yichao.cn" target="_blank">眼镜</a>
+					<a href="http://www.hua.com/" target="_blank">中国鲜花礼品网</a>
+					<a href="http://www.giftjie.com/" target="_blank">礼物</a>
+					<a href="http://www.7192.com/" target="_blank">影楼网</a>
+					<a href="http://www.hifidiy.net/" target="_blank">中国音响</a>
+					<a href="http://www.zhibitouzi.com/" target="_blank">人民币收藏</a>
+					<a href="http://www.obolee.com/" target="_blank">欧宝丽官网</a>
+					<a href="http://www.7dapei.com/" target="_blank">服装搭配 </a>
+					<a href="http://www.shoes.net.cn/" target="_blank">鞋</a>
+					<a href="http://www.zhidiy.com/" target="_blank">纸艺网</a>
+					<a href="http://www.ynshangji.com/" target="_blank">商机网</a>
+					<a href="http://www.temaiku.com/" target="_blank">唯品会品牌折扣网</a>
+					<a href="http://www.53shop.com/" target="_blank">53货源网</a>
+					<a href="http://www.inshion.com/" target="_blank">型尚网 </a>
+					<a href="http://www.51fashion.com.cn/" target="_blank">饰品招商加盟</a>
+					<a href="http://www.taoxie.com/" target="_blank">好乐淘买鞋</a>
+					<a href="http://www.wine9.com/" target="_blank">红酒</a>
+					<a href="http://www.52hua.cn/" target="_blank">鲜花网</a>
+					<a href="http://www.yimianmian.com/" target="_blank">意绵绵珠宝</a>
+					<a href="http://www.ynhmw.com/" target="_blank">云南花木网</a>
+					<a href="http://www.lipin-bj.cn/" target="_blank">北京礼品公司</a>
+					<a href="http://www.haole.com/ " target="_blank">好乐美饰</a>
+					<a href="http://www.hznzcn.com/ " target="_blank">微商货源网</a>
+					<a href="http://www.onlylady.com/ " target="_blank">Onlylady女人志</a>
+					<a href="http://www.kimiss.com/ " target="_blank">闺蜜网</a>
+					<a href="http://www.jieqinwang.com " target="_blank">婚车租赁</a>
+					<a href="http://www.china-ef.com/ " target="_blank">中国品牌服装网</a>
+					<a href="http://www.meidebi.com/ " target="_blank">比价</a>
+					<a href="https://www.withloveco.cn/" target="_blank">钻戒</a>
+					申请友链QQ：59569526
+				</div>
+				<span>
+					<a href="">
+						<img src="../img/newGovIcon.gif">
+					</a>
+				</span>
+			</div>
+		</div>
+</body>
+	<script type="text/javascript">
+		var oJisuan = document.querySelector(".jisuan");
+		var oMony1 = document.querySelector(".price");
+		var oMuch = document.querySelector(".much");
+		var oZs = document.querySelector(".prices");
+		var oAdd = document.querySelector(".table2-right2-3"); 
+		var oMinus = document.querySelector(".table2-right2-2"); 
+		var oZjg=Number(oJisuan.innerHTML);
+		var num=Number(oMuch.value);  //商品数量
+		var num1=Number(oMony1.innerHTML);  //单价
+		var all=Number(oZs.innerHTML);		//总价
+		oAdd.onclick=function(){
+			num+=1;
+			oMuch.value=num;
+			fn();
+			fn2();
+			oZs.innerHTML=all;
+		}
+		oMinus.onclick=function(){
+			num-=1;
+			if(num==-1){
+				num=0;
+			}
+			oMuch.value=num;
+			fn();
+			fn2();
+			oZs.innerHTML=all;
+		}
+		function fn(){
+			all=num*num1;  //总的价格=商品数量*单价
+		}
+		function fn2(){
+			var oZjg=all+num5;
+			oJisuan.innerHTML=oZjg;
+		}
+		var oMony2 = document.querySelector(".price1");
+		var oMuch1 = document.querySelector(".much1");
+		var oZs1 = document.querySelector(".prices1");
+		var oAdd1 = document.querySelector(".btn2"); 
+		var oMinus1 = document.querySelector(".btn1");
+		var num3=Number(oMuch1.value);  //商品数量
+		var num4=Number(oMony2.innerHTML);  //单价
+		var num5=Number(oZs1.innerHTML);		//总价
+		oAdd1.onclick=function(){
+			num3+=1;
+			oMuch1.value=num3;
+			fn1();
+			fn2();
+			oZs1.innerHTML=num5;
+		}
+		oMinus1.onclick=function(){
+			num3-=1;
+			if(num3==-1){
+				num3=0;
+			}
+			oMuch1.value=num3;
+			fn1();
+			fn2();
+			oZs1.innerHTML=num5;
+		}
+		function fn1(){
+			num5=num3*num4;  //总的价格=商品数量*单价
+		}
+		var oK1 = document.querySelector(".p1");
+		var oK2 = document.querySelector(".s4");
+		var oDel = document.querySelector(".s1");
+		var oDel1 = document.querySelector(".s2");
+		oDel.onclick=function(){
+			oK1.remove();
+		}
+		oDel1.onclick=function(){
+			oK2.remove();
+		}
+
+	</script>
+</html>
